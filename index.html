@@ -1,32 +1,51 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>curso</title>
 
-
     <style>
-        body {
-            text-align: center;
-            font-family:Helvetica, sans-serif;
-        }
+      body {
+        text-align: center;
+        font-family: Helvetica, sans-serif;
+      }
     </style>
-</head>
-<body >
+  </head>
+  <body>
     <h1>Curso JS</h1>
     <h2></h2>
-    <p id="texto">Laura </p>
+    <p id="texto"></p>
 
-    <!-- <button ondblclick="eventoDblClick()">Clique aqui</button><br><br> -->
-<button id="cor">Trocar cor</button>
-<!--     
-    <div id="teste" onmouseout="viraAzul()" onmousemove="adicionarTexto()" onmouseover="viraVermelho()" style="margin: auto auto; width:80%; height:200px; background: blue;"></div> -->
+    <button ondblclick="eventoDblClick()">Clique aqui</button><br/><br/>
 
-    
+    <select onchange="mudou()" id="itens">
+        <option value="1">escolha 1</option>
+        <option value="2">escolha 2</option>
+        <option value="3">escolha 3</option>
+        <option value="4">escolha 4</option>
+    </select>
+
+    <div
+      id="teste"
+      onmouseout="viraAzul()"
+      onmousemove="adicionarTexto()"
+      onmouseover="viraVermelho()"
+      style="margin: auto auto; width: 80%; height: 200px; background: blue"
+    ></div>
+
+    <input
+      onfocus="limpaTexto()"
+      id="campoTexto"
+      style="padding: 80px; font-size: 40px"
+      placeholder="Escreva aqui"
+      type="text"
+      value="Escreva aqui"
+    />
+
     <script src="./operadores.js"></script>
     <script src="./funcoes.js"></script>
     <script src="./eventos.js"></script>
-</body>
+  </body>
 </html>

@@ -41,3 +41,7 @@
     let p = document.getElementById("texto");
     p.append('O mouse moveu<br>');
  }
+
+ function mudou() {
+   console.log('mudou');
+ }
