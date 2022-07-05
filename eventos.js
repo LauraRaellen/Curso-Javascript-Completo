@@ -23,6 +23,11 @@
 
  */
 
+ function eventoClick() {
+   document.body.style.backgroundColor = "yellow"
+ }
+
+ 
  function eventoDblClick() {
     alert('Evento de clique duplo');
  }
